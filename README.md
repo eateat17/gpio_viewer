@@ -84,7 +84,6 @@ void setup()
 - The Espressif ESP32 Arduino Core that is installed in your system will need to be v3.0.0 or greater, in order for GPIO viewer to compile properly.
 - If you want support for the Arduino Core v2.x, use version 1.6.3 of the GPIOViewer library.
 
-
 ## Performance
 
 - Ensure you have a strong Wifi signal with a good transfer rate. 25ms sampling interval works great on Wifi 6 with 125 Mbps.
@@ -96,7 +95,7 @@ Contributors are welcomed! If you want to submit pull requests, [here is how you
 
 ## Troubleshooting
 
-### Last tested to be working on :
+### Last tested to be working on
 
 - v3.3.3 [ESP32 Arduino Core](https://github.com/espressif/arduino-esp32)
 - v3.4.9 [Async TCP](https://github.com/ESP32Async/AsyncTCP)
@@ -117,6 +116,7 @@ You can disable pin detection by adding this define before including the library
 If your code don't compile, **before submitting an issue:**
 
 Try placing this header file after all other includes:
+
 ```C++
 #include <gpio_viewer.h> 
 ```

@@ -1,10 +1,17 @@
 // Test Code for the GPIOViewer development
 // Adjust Last tested on in the example.
 //
+#include <Arduino.h>
 #include "src/gpio_viewer.h"
 #include <WiFi.h>
 #include <SimpleRotary.h>
 #include "secrets.h"
+
+
+
+void someFunction(int num) {
+}
+
 
 GPIOViewer gpio_viewer;
 
