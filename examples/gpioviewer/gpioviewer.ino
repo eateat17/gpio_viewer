@@ -15,6 +15,7 @@ Documentation : https://github.com/thelastoutpostworkshop/gpio_viewer
 // #define NO_PIN_FUNCTIONS
 
 #include <gpio_viewer.h> // Must me the first include in your project
+#include <HardwareSerial.h>
 GPIOViewer gpio_viewer;
 
 void setup()
@@ -22,7 +23,7 @@ void setup()
   Serial.begin(115200);
 
   // Comment the next line, If your code aleady include connection to Wifi in mode WIFI_STA (WIFI_AP and WIFI_AP_STA are not supported)
-  gpio_viewer.connectToWifi("Your SSID network", "Your WiFi Password");
+  gpio_viewer.connectToWifi("NextGenTel_C9C2", "JZR42LNSLR7LE7");
   // gpio_viewer.setPort(5555);                 // You can set the http port, if not set default port is 8080
 
   // Your own setup code start here
